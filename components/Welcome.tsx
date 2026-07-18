@@ -49,18 +49,28 @@ export default function Welcome({ onOpen }: WelcomeProps) {
           className="mt-8 w-full max-w-xs text-center px-6"
         >
           {/* Wedding Invitation */}
-          <p className="uppercase tracking-[7px] text-[10px] text-[#7E6548]">
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 1 }}
+            className="uppercase tracking-[7px] text-[10px] text-[#7E6548]"
+          >
             Wedding Invitation
-          </p>
+          </motion.p>
 
           {/* Divider */}
-          <div className="w-16 h-px bg-[#B58A56] mx-auto mt-4 mb-8" />
+          <motion.div
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ delay: 1.1, duration: 0.8 }}
+            className="w-16 h-px bg-[#B58A56] mx-auto mt-4 mb-8"
+          />
 
           {/* Groom */}
           <motion.h1
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
+            transition={{delay: 1.4, duration: 1,}}
             className="font-heading text-[46px] leading-none text-[#5B4030]"
           >
             Athul
@@ -70,7 +80,7 @@ export default function Welcome({ onOpen }: WelcomeProps) {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.8 }}
+            transition={{delay: 2.0, duration: 0.8,}}
             className="font-heading text-[36px] my-3 text-[#B58A56]"
           >
             &
@@ -80,7 +90,7 @@ export default function Welcome({ onOpen }: WelcomeProps) {
           <motion.h1
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1 }}
+            transition={{delay: 2.3, duration: 1,}}
             className="font-heading text-[46px] leading-none text-[#5B4030]"
           >
             Reshma
@@ -90,7 +100,7 @@ export default function Welcome({ onOpen }: WelcomeProps) {
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1.2 }}
+            transition={{delay: 2.8, duration: 0.8,}}
             className="mt-5 text-[18px] font-semibold text-[#8A6843]"
           >
             21 August 2026
@@ -100,7 +110,7 @@ export default function Welcome({ onOpen }: WelcomeProps) {
           <motion.button
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.4 }}
+            transition={{delay: 3.2, duration: 0.9,}}
             whileTap={{ scale: 0.97 }}
             onClick={onOpen}
             className="mt-10 mx-auto w-64 rounded-full border border-[#C7A46B] bg-white/65 backdrop-blur-md py-3 text-sm uppercase tracking-[4px] text-[#6F5136] shadow-[0_8px_20px_rgba(181,138,86,0.18)] transition-all duration-300 hover:bg-white/80"

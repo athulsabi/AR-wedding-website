@@ -58,14 +58,14 @@ export default function Countdown() {
         className="absolute inset-0"
       >
         <Image
-          src="/images/background.webp"
+          src="/images/backgroundnew.png"
           alt="Wedding Background"
           fill
           className="object-cover"
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-white/35 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-white/5" />
       </motion.div>
 
       {/* Content */}

@@ -16,7 +16,7 @@ export default function Welcome({ onOpen }: WelcomeProps) {
         alt="Wedding Background"
         fill
         priority
-        className="object-contain bg-[#f8f3eb]"
+        className="object-cover"
       />
 
       {/* Soft Overlay */}
@@ -33,7 +33,7 @@ export default function Welcome({ onOpen }: WelcomeProps) {
           className="pt-10"
         >
           <Image
-            src="/images/ganapathi.png"
+            src="/images/Ganapathi.png"
             alt="Lord Ganesha"
             width={85}
             height={85}

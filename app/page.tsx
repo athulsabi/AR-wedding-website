@@ -5,10 +5,10 @@ import { useState } from "react";
 import Welcome from "@/components/Welcome";
 import Intro from "@/components/Intro";
 import Countdown from "@/components/Countdown";
-import Events from "@/components/Events";
 import Story from "@/components/Story";
-import Gallery from "@/components/Gallery";
-import Venue from "@/components/Venue";
+import WeddingEvent from "@/components/WeddingEvent";
+import LunchEvent from "@/components/LunchEvent";
+import ReceptionEvent from "@/components/ReceptionEvent";
 import RSVP from "@/components/RSVP";
 import Footer from "@/components/Footer";
 import MusicPlayer from "@/components/MusicPlayer";
@@ -24,21 +24,23 @@ export default function Home() {
         <>
           <MusicPlayer isPlaying={true} />
 
-          <Intro />
+          <main className="overflow-x-hidden">
+            <Intro />
 
-          <Countdown />
+            <Countdown />
 
-          <Events />
+            <WeddingEvent />
 
-          <Story />
+            <LunchEvent />
 
-          <Gallery />
+            <ReceptionEvent />
 
-          <Venue />
+            <Story />
 
-          <RSVP />
+            <RSVP />
 
-          <Footer />
+            <Footer />
+          </main>
         </>
       )}
     </>

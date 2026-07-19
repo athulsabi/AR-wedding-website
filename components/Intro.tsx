@@ -19,55 +19,30 @@ export default function Intro() {
       <div className="absolute inset-0 bg-white/5" />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-8 max-w-md pt-24 pb-20">
-
-        {/* Groom */}
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="font-heading text-[58px] text-[#5B4030]"
-        >
-          Athul
-        </motion.h2>
-
-        {/* Ampersand */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-          className="font-heading text-[40px] text-[#B58A56] my-3"
-        >
-          &
-        </motion.div>
-
-        {/* Bride */}
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-heading text-[58px] text-[#5B4030]"
-        >
-          Reshma
-        </motion.h2>
+      <div className="relative z-10 text-center px-8 max-w-md pt-12 pb-20">
 
         {/* Invitation Message */}
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="mt-14 space-y-5 text-[18px] leading-9 text-[#5D4736]"
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="mt-12"
         >
-          <p>Together with our families</p>
+        <h2 className="font-heading text-[34px] text-[#5B4030] mb-10">
+            Together with our families,
+        </h2>
 
-          <p>We warmly invite you</p>
+        <div className="space-y-7 text-[18px] leading-9 text-[#5D4736] px-3">
+            <p>
+            With joyful hearts, we warmly invite you to join us as we celebrate
+            our wedding and bless the beginning of our forever together.
+            </p>
 
-          <p>to celebrate our wedding</p>
-
-          <p>and bless our new beginning.</p>
+            <p>
+            Your presence will make our special day even more meaningful.
+            </p>
+        </div>
         </motion.div>
 
         {/* Scroll Indicator */}

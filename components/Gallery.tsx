@@ -20,7 +20,9 @@ export default function Gallery() {
     
           {/* Content */}
           <div className="relative z-10 flex min-h-[100svh] items-center justify-center">
-            <h2 className="font-heading text-5xl text-[#5C3A2B]">Gallery</h2>
+            <h2 className="font-heading text-5xl text-[#5C3A2B]">
+              Gallery
+            </h2>
           </div>
     </section>
   );

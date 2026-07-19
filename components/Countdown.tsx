@@ -44,7 +44,7 @@ export default function Countdown() {
   }, []);
 
   return (
-    <section className="relative min-h-[100svh] overflow-hidden flex items-center justify-center px-6 py-14">
+    <section className="relative min-h-[100svh] overflow-hidden px-6 py-16">
 
       {/* Background */}
       <motion.div
@@ -68,7 +68,7 @@ export default function Countdown() {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-md text-center">
+      <div className="relative z-10 mx-auto w-full max-w-md text-center pt-20">
 
         {/* Heading */}
         <motion.p
@@ -80,7 +80,6 @@ export default function Countdown() {
           We're Getting Married In
         </motion.p>
 
-        {/* Divider */}
         <div className="w-24 h-px bg-[#C7A26A] mx-auto mt-6 mb-8" />
 
         {/* Countdown */}
@@ -92,8 +91,10 @@ export default function Countdown() {
             { value: timeLeft.minutes, label: "Min" },
             { value: timeLeft.seconds, label: "Sec" },
           ].map((item, index) => (
-            <div key={item.label} className="flex items-start">
-
+            <div
+              key={item.label}
+              className="flex items-start"
+            >
               <div className="text-center">
 
                 <div className="text-4xl font-semibold text-[#6A4332]">
@@ -111,7 +112,6 @@ export default function Countdown() {
                   :
                 </div>
               )}
-
             </div>
           ))}
 
@@ -124,19 +124,26 @@ export default function Countdown() {
           <div className="h-px w-16 bg-[#C7A26A]" />
         </div>
 
-        {/* Date */}
-        <h3 className="font-heading text-[44px] text-[#5C3A2B]">
-          21 August 2026
-        </h3>
+        {/* Date & Muhurtham */}
+        <motion.div
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+          className="-mt-4"
+        >
+          <h3 className="font-heading text-[46px] font-medium tracking-[0.5px] text-[#5C3A2B]">
+            21 August 2026
+          </h3>
 
-        {/* Muhurtham */}
-        <p className="mt-5 uppercase tracking-[5px] text-[#B0895A] text-sm">
-          Muhurtham
-        </p>
+          <p className="mt-4 font-heading text-[28px] font-normal tracking-[3px] text-[#9B7A54]">
+            Muhurtham
+          </p>
 
-        <p className="mt-3 uppercase tracking-[4px] text-[#9B7A54] text-xl">
-          10:05 AM – 10:25 AM
-        </p>
+          <p className="mt-4 font-heading text-[28px] font-normal tracking-[3px] text-[#9B7A54]">
+            10:05 AM – 10:25 AM
+          </p>
+        </motion.div>
 
       </div>
 

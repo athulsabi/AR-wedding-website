@@ -44,7 +44,7 @@ export default function Countdown() {
   }, []);
 
   return (
-    <section className="relative min-h-screen overflow-hidden flex items-center justify-center px-6 py-20">
+    <section className="relative min-h-[100svh] overflow-hidden flex items-center justify-center px-6 py-14">
 
       {/* Background */}
       <motion.div
@@ -64,7 +64,6 @@ export default function Countdown() {
           className="object-cover"
         />
 
-        {/* Overlay */}
         <div className="absolute inset-0 bg-white/5" />
       </motion.div>
 
@@ -78,20 +77,11 @@ export default function Countdown() {
           viewport={{ once: true }}
           className="uppercase tracking-[5px] text-xs text-[#9B7A54]"
         >
-          Our Wedding Begins In
+          We're Getting Married In
         </motion.p>
 
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="mt-3 font-heading text-5xl text-[#5C3A2B]"
-        >
-          Countdown
-        </motion.h2>
-
-        <div className="w-24 h-px bg-[#C7A26A] mx-auto mt-6 mb-10" />
+        {/* Divider */}
+        <div className="w-24 h-px bg-[#C7A26A] mx-auto mt-6 mb-8" />
 
         {/* Countdown */}
         <div className="flex justify-center items-start gap-2">
@@ -102,10 +92,8 @@ export default function Countdown() {
             { value: timeLeft.minutes, label: "Min" },
             { value: timeLeft.seconds, label: "Sec" },
           ].map((item, index) => (
-            <div
-              key={item.label}
-              className="flex items-start"
-            >
+            <div key={item.label} className="flex items-start">
+
               <div className="text-center">
 
                 <div className="text-4xl font-semibold text-[#6A4332]">
@@ -123,41 +111,32 @@ export default function Countdown() {
                   :
                 </div>
               )}
+
             </div>
           ))}
 
         </div>
 
         {/* Divider */}
-        <div className="flex items-center justify-center gap-4 my-14">
+        <div className="flex items-center justify-center gap-4 my-10">
           <div className="h-px w-16 bg-[#C7A26A]" />
           <span className="text-[#C7A26A] text-xl">❀</span>
           <div className="h-px w-16 bg-[#C7A26A]" />
         </div>
 
         {/* Date */}
-        <h3 className="font-heading text-3xl text-[#5C3A2B]">
+        <h3 className="font-heading text-[44px] text-[#5C3A2B]">
           21 August 2026
         </h3>
 
-        <p className="mt-3 uppercase tracking-[3px] text-[#9B7A54]">
-          10:05 AM – 10:25 AM
+        {/* Muhurtham */}
+        <p className="mt-5 uppercase tracking-[5px] text-[#B0895A] text-sm">
+          Muhurtham
         </p>
 
-        {/* Venue */}
-        <div className="mt-10 space-y-3">
-
-          <h4 className="text-2xl font-medium text-[#5C3A2B]">
-            Padinjare Madom
-          </h4>
-
-          <p className="leading-8 text-[#6A4332]">
-            Sree Guruvayoorappan Temple
-            <br />
-            Pattambi, Palakkad
-          </p>
-
-        </div>
+        <p className="mt-3 uppercase tracking-[4px] text-[#9B7A54] text-xl">
+          10:05 AM – 10:25 AM
+        </p>
 
       </div>
 

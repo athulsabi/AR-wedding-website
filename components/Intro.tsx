@@ -32,7 +32,7 @@ export default function Intro() {
             Together with our families,
           </h2>
 
-          <div className="space-y-8 text-[18px] leading-9 text-[#5D4736]">
+          <div className="space-y-8 text-[16px] leading-9 text-[#5D4736]">
             <p>
               With joyful hearts, we warmly invite you to join us as we
               celebrate our wedding and bless the beginning of our forever

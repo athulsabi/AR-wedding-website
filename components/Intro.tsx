@@ -19,30 +19,30 @@ export default function Intro() {
       <div className="absolute inset-0 bg-white/5" />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-8 max-w-md pt-12 pb-20">
+      <div className="relative z-10 w-full max-w-md mx-auto px-8 pt-16 pb-20 text-center">
 
         {/* Invitation Message */}
         <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
-            className="mt-12"
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
         >
-        <h2 className="font-heading text-[34px] text-[#5B4030] mb-10">
+          <h2 className="font-heading text-[24px] sm:text-[30px] leading-snug text-[#5B4030] mb-8">
             Together with our families,
-        </h2>
+          </h2>
 
-        <div className="space-y-7 text-[18px] leading-9 text-[#5D4736] px-3">
+          <div className="space-y-8 text-[18px] leading-9 text-[#5D4736]">
             <p>
-            With joyful hearts, we warmly invite you to join us as we celebrate
-            our wedding and bless the beginning of our forever together.
+              With joyful hearts, we warmly invite you to join us as we
+              celebrate our wedding and bless the beginning of our forever
+              together.
             </p>
 
             <p>
-            Your presence will make our special day even more meaningful.
+              Your presence will make our special day even more meaningful.
             </p>
-        </div>
+          </div>
         </motion.div>
 
         {/* Scroll Indicator */}
@@ -57,7 +57,7 @@ export default function Intro() {
             Scroll
           </p>
 
-          <p className="text-2xl mt-2 text-[#8A6843]">
+          <p className="mt-2 text-2xl text-[#8A6843]">
             ↓
           </p>
         </motion.div>

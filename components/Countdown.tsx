@@ -132,15 +132,15 @@ export default function Countdown() {
           transition={{ delay: 0.3 }}
           className="-mt-4"
         >
-          <h3 className="font-heading text-[46px] font-medium tracking-[0.5px] text-[#5C3A2B]">
+          <p className="font-heading text-[40px] font-medium tracking-[0.5px] text-[#5C3A2B]">
             21 August 2026
-          </h3>
+          </p>
 
-          <p className="mt-4 font-heading text-[28px] font-normal tracking-[3px] text-[#9B7A54]">
+          <p className="mt-4 font-heading text-[24px] font-normal tracking-[3px] text-[#9B7A54]">
             Muhurtham
           </p>
 
-          <p className="mt-4 font-heading text-[28px] font-normal tracking-[3px] text-[#9B7A54]">
+          <p className="mt-4 font-heading text-[24px] font-normal tracking-[3px] text-[#9B7A54]">
             10:05 AM – 10:25 AM
           </p>
         </motion.div>

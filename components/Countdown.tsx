@@ -81,7 +81,7 @@ export default function Countdown() {
       We're Getting Married In
     </motion.p>
 
-    <div className="w-24 h-px bg-[#C7A26A] mx-auto mt-6 mb-8" />
+    <div className="w-24 h-px bg-[#C7A26A] mx-auto mt-4 mb-8" />
 
     {/* Countdown */}
     <div className="flex justify-center items-start gap-2">

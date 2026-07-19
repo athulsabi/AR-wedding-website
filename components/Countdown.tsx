@@ -44,7 +44,7 @@ export default function Countdown() {
   }, []);
 
   return (
-    <section className="relative min-h-[100svh] overflow-hidden px-6 py-16">
+    <section className="relative min-h-[100svh] overflow-hidden px-6">
 
       {/* Background */}
       <motion.div
@@ -68,84 +68,82 @@ export default function Countdown() {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto w-full max-w-md text-center pt-20">
+<div className="relative z-10 flex min-h-[100svh] items-center justify-center">
+  <div className="w-full max-w-md text-center -translate-y-10">
 
-        {/* Heading */}
-        <motion.p
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="uppercase tracking-[5px] text-xs text-[#9B7A54]"
-        >
-          We're Getting Married In
-        </motion.p>
+    {/* Heading */}
+    <motion.p
+      initial={{ opacity: 0, y: 15 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      className="uppercase tracking-[5px] text-xs text-[#9B7A54]"
+    >
+      We're Getting Married In
+    </motion.p>
 
-        <div className="w-24 h-px bg-[#C7A26A] mx-auto mt-6 mb-8" />
+    <div className="w-24 h-px bg-[#C7A26A] mx-auto mt-6 mb-8" />
 
-        {/* Countdown */}
-        <div className="flex justify-center items-start gap-2">
+    {/* Countdown */}
+    <div className="flex justify-center items-start gap-2">
 
-          {[
-            { value: timeLeft.days, label: "Days" },
-            { value: timeLeft.hours, label: "Hours" },
-            { value: timeLeft.minutes, label: "Min" },
-            { value: timeLeft.seconds, label: "Sec" },
-          ].map((item, index) => (
-            <div
-              key={item.label}
-              className="flex items-start"
-            >
-              <div className="text-center">
+      {[
+        { value: timeLeft.days, label: "Days" },
+        { value: timeLeft.hours, label: "Hours" },
+        { value: timeLeft.minutes, label: "Min" },
+        { value: timeLeft.seconds, label: "Sec" },
+      ].map((item, index) => (
+        <div key={item.label} className="flex items-start">
 
-                <div className="text-4xl font-semibold text-[#6A4332]">
-                  {String(item.value).padStart(2, "0")}
-                </div>
-
-                <p className="mt-1 text-[10px] uppercase tracking-[2px] text-[#8D6A52]">
-                  {item.label}
-                </p>
-
-              </div>
-
-              {index !== 3 && (
-                <div className="mx-2 mt-1 text-3xl font-light text-[#C7A26A]">
-                  :
-                </div>
-              )}
+          <div className="text-center">
+            <div className="text-4xl font-semibold text-[#6A4332]">
+              {String(item.value).padStart(2, "0")}
             </div>
-          ))}
+
+            <p className="mt-1 text-[10px] uppercase tracking-[2px] text-[#8D6A52]">
+              {item.label}
+            </p>
+          </div>
+
+          {index !== 3 && (
+            <div className="mx-2 mt-1 text-3xl font-light text-[#C7A26A]">
+              :
+            </div>
+          )}
 
         </div>
+      ))}
 
-        {/* Divider */}
-        <div className="flex items-center justify-center gap-4 my-10">
-          <div className="h-px w-16 bg-[#C7A26A]" />
-          <span className="text-[#C7A26A] text-xl">❀</span>
-          <div className="h-px w-16 bg-[#C7A26A]" />
-        </div>
+    </div>
 
-        {/* Date & Muhurtham */}
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3 }}
-          className="-mt-4"
-        >
-          <p className="font-heading text-[40px] font-medium tracking-[0.5px] text-[#5C3A2B]">
-            21 August 2026
-          </p>
+    {/* Divider */}
+    <div className="flex items-center justify-center gap-4 my-10">
+      <div className="h-px w-16 bg-[#C7A26A]" />
+      <span className="text-[#C7A26A] text-xl">❀</span>
+      <div className="h-px w-16 bg-[#C7A26A]" />
+    </div>
 
-          <p className="mt-4 font-heading text-[24px] font-normal tracking-[3px] text-[#9B7A54]">
-            Muhurtham
-          </p>
+    {/* Date */}
+    <motion.div
+      initial={{ opacity: 0, y: 25 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.3 }}
+    >
+      <p className="font-heading text-[40px] font-medium tracking-[0.5px] text-[#5C3A2B]">
+        21 August 2026
+      </p>
 
-          <p className="mt-4 font-heading text-[24px] font-normal tracking-[3px] text-[#9B7A54]">
-            10:05 AM – 10:25 AM
-          </p>
-        </motion.div>
+      <p className="mt-4 font-heading text-[24px] tracking-[3px] text-[#9B7A54]">
+        Muhurtham
+      </p>
 
-      </div>
+      <p className="mt-4 font-heading text-[24px] tracking-[3px] text-[#9B7A54]">
+        10:05 AM – 10:25 AM
+      </p>
+    </motion.div>
+
+  </div>
+</div>
 
     </section>
   );

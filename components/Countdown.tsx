@@ -71,17 +71,21 @@ export default function Countdown() {
 <div className="relative z-10 flex min-h-[100svh] items-center justify-center">
   <div className="w-full max-w-md text-center -translate-y-10">
 
-    {/* Heading */}
-    <motion.p
-      initial={{ opacity: 0, y: 15 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      className="uppercase tracking-[5px] text-xs text-[#9B7A54]"
-    >
-      We're Getting Married In
-    </motion.p>
+          {/* Heading */}
+          <div className="mt-8">
 
-    <div className="w-24 h-px bg-[#C7A26A] mx-auto mt-4 mb-8" />
+            <motion.p
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="uppercase tracking-[5px] text-xs text-[#9B7A54]"
+            >
+              We're Getting Married In
+            </motion.p>
+
+            <div className="w-24 h-px bg-[#C7A26A] mx-auto mt-10 mb-8" />
+
+          </div>
 
     {/* Countdown */}
     <div className="flex justify-center items-start gap-2">

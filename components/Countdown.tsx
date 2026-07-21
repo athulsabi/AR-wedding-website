@@ -61,7 +61,6 @@ export default function Countdown() {
           src="/images/backgroundnew.png"
           alt="Wedding Background"
           fill
-          priority={false}
           className="object-cover"
         />
 
@@ -69,14 +68,14 @@ export default function Countdown() {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 flex min-h-[100svh] items-center justify-center px-8">
+      <div className="relative z-10 flex min-h-[100svh] items-center justify-center px-8 pb-16">
 
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="w-full max-w-md text-center"
+          className="w-full max-w-md text-center -translate-y-10"
         >
 
           {/* Heading */}
@@ -84,31 +83,26 @@ export default function Countdown() {
             We're Getting Married In
           </p>
 
-          <div className="w-24 h-px bg-[#C7A26A] mx-auto mt-5 mb-8" />
+          <div className="mx-auto mt-5 mb-8 h-px w-24 bg-[#C7A26A]" />
 
           {/* Countdown */}
-          <div className="flex justify-center items-start gap-2">
-
+          <div className="flex items-start justify-center gap-2">
             {[
               { value: timeLeft.days, label: "Days" },
               { value: timeLeft.hours, label: "Hours" },
               { value: timeLeft.minutes, label: "Min" },
               { value: timeLeft.seconds, label: "Sec" },
             ].map((item, index) => (
-              <div
-                key={item.label}
-                className="flex items-start"
-              >
-                <div className="text-center">
+              <div key={item.label} className="flex items-start">
 
-                  <div className="text-4xl font-semibold text-[#6A4332]">
+                <div className="text-center">
+                  <div className="text-[38px] font-semibold text-[#6A4332]">
                     {String(item.value).padStart(2, "0")}
                   </div>
 
                   <p className="mt-1 text-[10px] uppercase tracking-[2px] text-[#8D6A52]">
                     {item.label}
                   </p>
-
                 </div>
 
                 {index !== 3 && (
@@ -119,23 +113,21 @@ export default function Countdown() {
 
               </div>
             ))}
-
           </div>
 
           {/* Divider */}
-          <div className="flex items-center justify-center gap-4 my-9">
+          <div className="my-9 flex items-center justify-center gap-4">
             <div className="h-px w-16 bg-[#C7A26A]" />
-            <span className="text-[#C7A26A] text-xl">❀</span>
+            <span className="text-xl text-[#C7A26A]">❀</span>
             <div className="h-px w-16 bg-[#C7A26A]" />
           </div>
 
           {/* Date */}
-          <p className="font-heading text-[40px] text-[#5C3A2B]">
+          <p className="font-heading text-[42px] text-[#5C3A2B]">
             21 August 2026
           </p>
 
-          
-
+          {/* Time */}
           <p className="mt-3 font-heading text-[28px] tracking-[2px] text-[#9B7A54]">
             10:05 AM – 10:25 AM
           </p>

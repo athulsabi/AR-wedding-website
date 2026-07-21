@@ -75,11 +75,11 @@ export default function Countdown() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="w-full max-w-md text-center -translate-y-10"
+          className="w-full max-w-md text-center"
         >
 
           {/* Heading */}
-          <p className="uppercase tracking-[5px] text-xs text-[#9B7A54]">
+          <p className="mt-12 uppercase tracking-[5px] text-xs text-[#9B7A54]">
             We're Getting Married In
           </p>
 
@@ -116,10 +116,8 @@ export default function Countdown() {
           </div>
 
           {/* Divider */}
-          <div className="my-9 flex items-center justify-center gap-4">
-            <div className="h-px w-16 bg-[#C7A26A]" />
-            <span className="text-xl text-[#C7A26A]">❀</span>
-            <div className="h-px w-16 bg-[#C7A26A]" />
+          <div className="my-5 flex items-center justify-center">
+            <span className="text-2xl text-[#C7A26A]">❀</span>
           </div>
 
           {/* Date */}
@@ -128,7 +126,7 @@ export default function Countdown() {
           </p>
 
           {/* Time */}
-          <p className="mt-3 font-heading text-[28px] tracking-[2px] text-[#9B7A54]">
+          <p className="mt-1 font-heading text-[28px] tracking-[2px] text-[#9B7A54]">
             10:05 AM – 10:25 AM
           </p>
 

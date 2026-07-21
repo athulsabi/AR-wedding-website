@@ -9,6 +9,7 @@ import Story from "@/components/Story";
 import WeddingEvent from "@/components/WeddingEvent";
 import LunchEvent from "@/components/LunchEvent";
 import ReceptionEvent from "@/components/ReceptionEvent";
+import FamilyDetails from "@/components/FamilyDetails";
 import RSVP from "@/components/RSVP";
 import Footer from "@/components/Footer";
 import MusicPlayer from "@/components/MusicPlayer";
@@ -34,6 +35,8 @@ export default function Home() {
             <LunchEvent />
 
             <ReceptionEvent />
+            
+            <FamilyDetails />
 
             <Story />
 

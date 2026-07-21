@@ -4,7 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 interface EventCardProps {
-  image: string;
   tag: string;
   title: string;
   description: string;
@@ -16,7 +15,6 @@ interface EventCardProps {
 }
 
 export default function EventCard({
-  image,
   tag,
   title,
   description,
@@ -61,23 +59,6 @@ export default function EventCard({
             p-7
           "
         >
-
-          {/* Event Image */}
-          <motion.div
-            initial={{ scale: .95, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: .2 }}
-            className="overflow-hidden rounded-[28px] border-8 border-[#FFF8EF] shadow-xl"
-          >
-            <Image
-              src={image}
-              alt={title}
-              width={700}
-              height={700}
-              className="w-full object-cover"
-            />
-          </motion.div>
 
           {/* Event Tag */}
           <p className="mt-10 text-center uppercase tracking-[8px] text-xs text-[#B6924F]">

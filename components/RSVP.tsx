@@ -72,7 +72,7 @@ export default function RSVP() {
 
       {/* Content */}
 
-      <div className="relative z-10 mx-auto flex min-h-[100svh] w-full max-w-md flex-col justify-center px-8 py-24">
+      <div className="relative z-10 mx-auto w-full max-w-md px-8 pt-56 pb-24">
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

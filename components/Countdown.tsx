@@ -134,9 +134,7 @@ export default function Countdown() {
             21 August 2026
           </p>
 
-          <p className="mt-4 font-heading text-[22px] tracking-[4px] text-[#9B7A54] uppercase">
-            Muhurtham
-          </p>
+          
 
           <p className="mt-3 font-heading text-[28px] tracking-[2px] text-[#9B7A54]">
             10:05 AM – 10:25 AM

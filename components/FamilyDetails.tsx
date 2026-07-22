@@ -20,28 +20,7 @@ export default function FamilyDetails() {
       {/* Content */}
       <div className="relative z-10 mx-auto flex min-h-[100svh] w-full max-w-md flex-col justify-center px-8 py-24">
 
-        {/* Heading */}
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="text-center"
-        >
-          <p className="uppercase tracking-[5px] text-xs text-[#9B7A54]">
-            Together With
-          </p>
-
-          <h2 className="mt-4 font-heading text-[44px] leading-none text-[#5B4030]">
-            Our Families
-          </h2>
-
-          <p className="mt-5 text-[17px] leading-8 text-[#6B503B]">
-            We are blessed by the love,
-            <br />
-            guidance and support of our families.
-          </p>
-        </motion.div>
+        
 
         {/* Groom Card */}
         <motion.div
@@ -56,7 +35,7 @@ export default function FamilyDetails() {
           </p>
 
           <h3 className="mt-5 text-center font-heading text-[42px] text-[#5B4030]">
-            Athul
+            Athul S
           </h3>
 
           <p className="mt-7 text-center text-[#8B6A46]">
@@ -64,11 +43,11 @@ export default function FamilyDetails() {
           </p>
 
           <p className="mt-3 text-center text-[20px] leading-9 text-[#5B4030]">
-            Sabi P
+            Mr. Sabi P
             <br />
             &
             <br />
-            Animol K
+            Mrs. Animol K
           </p>
         </motion.div>
 
@@ -85,7 +64,7 @@ export default function FamilyDetails() {
           </p>
 
           <h3 className="mt-5 text-center font-heading text-[42px] text-[#5B4030]">
-            Reshma
+            Reshma TS
           </h3>
 
           <p className="mt-7 text-center text-[#8B6A46]">
@@ -93,11 +72,11 @@ export default function FamilyDetails() {
           </p>
 
           <p className="mt-3 text-center text-[20px] leading-9 text-[#5B4030]">
-            Sasidharan TS
+            Mr. Sasidharan T
             <br />
             &
             <br />
-            Susheela R
+            Mrs. Suseela R
           </p>
         </motion.div>
 

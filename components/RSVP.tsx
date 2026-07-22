@@ -252,12 +252,6 @@ export default function RSVP() {
           {loading ? "Submitting..." : "Confirm Attendance"}
         </motion.button>
 
-        <p className="mt-8 text-center text-xs leading-6 text-[#8B6A46]">
-          Thank you for taking a moment to respond.
-          <br />
-          We look forward to celebrating this beautiful day with you.
-        </p>
-
       </div>
 
       {/* Success Popup */}

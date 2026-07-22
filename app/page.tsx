@@ -5,7 +5,6 @@ import { useState } from "react";
 import Welcome from "@/components/Welcome";
 import Intro from "@/components/Intro";
 import Countdown from "@/components/Countdown";
-import Story from "@/components/Story";
 import WeddingEvent from "@/components/WeddingEvent";
 import LunchEvent from "@/components/LunchEvent";
 import ReceptionEvent from "@/components/ReceptionEvent";
@@ -30,15 +29,13 @@ export default function Home() {
 
             <Countdown />
 
+            <FamilyDetails />
+
             <WeddingEvent />
 
             <LunchEvent />
 
             <ReceptionEvent />
-            
-            <FamilyDetails />
-
-            <Story />
 
             <RSVP />
 

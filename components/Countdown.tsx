@@ -79,7 +79,7 @@ export default function Countdown() {
         >
 
           {/* Heading */}
-          <p className="mt-12 uppercase tracking-[5px] text-xs text-[#9B7A54]">
+          <p className="mt-14 uppercase tracking-[5px] text-xs text-[#9B7A54]">
             We're Getting Married In
           </p>
 
@@ -113,11 +113,6 @@ export default function Countdown() {
 
               </div>
             ))}
-          </div>
-
-          {/* Divider */}
-          <div className="my-5 flex items-center justify-center">
-            <span className="text-2xl text-[#C7A26A]">❀</span>
           </div>
 
           {/* Date */}

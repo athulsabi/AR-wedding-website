@@ -96,7 +96,7 @@ export default function EventCard({
           <div className="mx-auto mt-10 h-px w-20 bg-[#D2B36B]" />
 
           {/* Venue */}
-          <h3 className="mt-10 text-center font-heading text-[42px] leading-tight text-[#7A2F4D]">
+          <h3 className="mt-10 text-center font-heading text-[40px] leading-tight text-[#7A2F4D]">
             {venue}
           </h3>
 
